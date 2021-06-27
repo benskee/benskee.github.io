@@ -9,7 +9,7 @@
 </head>
 <body>
     <div style='text-align: center'>
-        <h1>Bitcoin is <span id="changing">Hope</span></h1>
+        <h1>Bitcoin is <span id="changing" style='color: orange'>Hope</span></h1>
         <p>The current Bitcoin Block Height is <span id="blockCount"></span>.</p>
         <p>We are still winning.</p>
     </div>
@@ -20,12 +20,12 @@
         
         document.getElementById('blockCount').innerHTML = original
         // var blockCount = ajax.get("https://blockchain.info/q/getblockcount")
-        var words = ['Hope', 'Freedom', 'Inclusion', 'Time', 'Bitcoin'];
+        var words = ['Hope', 'Freedom', 'Inclusion', 'Time', 'Energy', 'Bitcoin'];
         let i = 0;
             do {
                 task(i);
                 i++;
-            } while (i < 5);
+            } while (i < 6);
             function task(i) {
                 setTimeout(function () {
                     $('#changing').empty().append(words[i])
