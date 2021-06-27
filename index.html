@@ -16,12 +16,11 @@
             We are still winning.</p>
     </div>
     <script>
-        // var original = $.get("https://blockchain.info/q/getblockcount")
-        var original = $.ajax({ type: "GET", url: "https://blockchain.info/q/getblockcount", async: false }).responseText
-        console.log(original)
+        // var original = $.ajax({ type: "GET", url: "https://blockchain.info/q/getblockcount", async: false }).responseText
+        var original = $.ajax({ type: "GET", url: "https://mempool.space/api/blocks/tip/height", async: false }).responseText
 
         document.getElementById('blockCount').innerHTML = original
-        // var blockCount = ajax.get("https://blockchain.info/q/getblockcount")
+
         var words = ['Hope', 'Freedom', 'Inclusion', 'Time', 'Energy', 'Bitcoin'];
         let i = 0;
         do {
