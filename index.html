@@ -16,7 +16,6 @@
             We are still winning.</p>
     </div>
     <script>
-        // var original = $.ajax({ type: "GET", url: "https://blockchain.info/q/getblockcount", async: false }).responseText
         var original = $.ajax({ type: "GET", url: "https://mempool.space/api/blocks/tip/height", async: false }).responseText
 
         document.getElementById('blockCount').innerHTML = original
