@@ -20,12 +20,12 @@
 
         document.getElementById('blockCount').innerHTML = original
 
-        var words = ['Hope', 'Freedom', 'Inclusion', 'Time', 'Energy', 'Bitcoin', 'Nice.'];
+        var words = ['Hope', 'Freedom', 'Inclusion', 'Time', 'Energy', 'Bitcoin'];
         let i = 0;
         do {
             task(i);
             i++;
-        } while (i < 7);
+        } while (i < 6);
         function task(i) {
             setTimeout(function () {
                 $('#changing').empty().append(words[i])
